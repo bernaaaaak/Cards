@@ -185,7 +185,7 @@ namespace Cards.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             // Retrieve the entity from the database
-            var numericDomainModel = await dbContext.NumericData.FirstOrDefaultAsync(x => x.Id == id);
+            var numericDomainModel = await numericDataRepository.DeleteAsync(id);
 
             // Check if the entity exists
             if (numericDomainModel == null)
