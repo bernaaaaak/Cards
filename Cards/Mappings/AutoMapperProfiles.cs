@@ -17,7 +17,3 @@ public string Name {get; set;}
     }
 
 
-public class NumericData
-    {
-public string Name {get; set;}
-    }
